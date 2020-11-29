@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/light/Montserrat-Light.eot');
+    src: url('fonts/Montserrat/light/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat/light/Montserrat-Light.woff2') format('woff2'),
+        url('fonts/Montserrat/light/Montserrat-Light.woff') format('woff'),
+        url('fonts/Montserrat/light/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/regular/Montserrat-Regular.eot');
+    src: url('fonts/Montserrat/regular/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat/regular/Montserrat-Regular.woff2') format('woff2'),
+        url('fonts/Montserrat/regular/Montserrat-Regular.woff') format('woff'),
+        url('fonts/Montserrat/regular/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/bold/Montserrat-Bold.eot');
+    src: url('fonts/Montserrat/bold/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Montserrat/bold/Montserrat-Bold.woff2') format('woff2'),
+        url('fonts/Montserrat/bold/Montserrat-Bold.woff') format('woff'),
+        url('fonts/Montserrat/bold/Montserrat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@mixin light {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+@mixin reg {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+@mixin bold {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@mixin h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #2d2d2d;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

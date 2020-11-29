@@ -1,0 +1,151 @@
+*
+    box-sizing: border-box
+
+.container
+    max-width: 1110px
+    margin: 0 auto
+
+.utp
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    margin-left: 65px
+    margin-bottom: 97px
+    &-title
+        +bold
+        font-size: 30px
+    &-descr
+        max-width: 450px
+        +reg
+        font-size: 13px
+        line-height: 17px
+    
+.utp-button
+    margin-top: 20px
+
+.utp-button
+    width: 230px
+    height: 50px
+    background-color: #D90B23
+    box-shadow: 0px 4px 20px rgba(217, 11, 35, 0.35)
+    border: none
+    +bold
+    font-size: 18px
+    text-align: center
+    cursor: pointer
+    transition: 0.3s ease-out
+    &:focus
+        outline: none
+    &:hover
+        background-color: #ffffff
+        color: #D90B23
+        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.35)
+
+.slider-block
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.slider
+    display: flex
+    align-items: center
+    &-content
+        position: relative
+        display: flex
+        justify-content: center
+        &__img
+            max-width: 730px
+
+.bullets
+    display: flex
+    position: absolute
+    bottom: 15px
+    &__item
+        width: 15px
+        height: 15px
+        background-color: #ffffff
+        border-radius: 50%
+        margin: 0 7px 0 7px
+        cursor: pointer
+
+.arrow-left
+    margin-right: 30px
+    cursor: pointer
+
+.arrow-right
+    margin-left: 30px
+    cursor: pointer
+
+.title-block
+    +h2
+    margin-top: 70px
+    margin-bottom: 30px
+
+.cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.card
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 350px
+    height: 325px
+    background-color: #ffffff
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
+    padding: 30px
+    margin: 0 10px 0 10px
+    margin-bottom: 30px
+    &-img
+        width: 290px
+    &__title
+        +bold
+        color: #2d2d2d
+        font-size: 15px
+        text-transform: uppercase
+        margin: 20px 0 15px 0
+    &__descr
+        +light
+        color: #2d2d2d
+        font-size: 12px
+        margin: 0 0 15px 0
+
+.price
+    +bold
+    font-size: 13px
+    color: #2d2d2d
+    margin: 0
+    text-transform: uppercase
+
+.uah
+    +reg
+    font-size: 13px
+    color: #2d2d2d
+    margin: 0 0 0 10px
+
+.burger
+    &-menu
+        display: none
+        cursor: pointer
+    &__item
+        width: 40px
+        height: 8px
+        background-color: #ffffff
+        margin: 8px 0 8px 0
+    &-close
+        display: none
+        position: absolute
+        width: 40px
+        height: 40px
+        right: 0
+        margin-bottom: 3px
+        &__item
+            position: absolute
+            width: 40px
+            height: 8px
+            background-color: #ffffff
+            &:first-child
+                transform: rotate(45deg)
+            &:last-child
+                transform: rotate(-45deg)

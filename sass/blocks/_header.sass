@@ -1,0 +1,35 @@
+.header-block
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 620px
+    background-image: url("../img/header/bg.jpg")
+    background-size: cover
+    padding: 30px
+
+.nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+.list
+    display: flex
+    justify-content: space-between
+    &-menu
+        margin-right: 95px
+        &__item
+            margin-left: 10px
+            +reg
+            text-decoration: none
+            transition: 0.3s ease-out
+            &:hover
+                color: #D90B23
+    &-language
+        &__item
+            margin-left: 8px
+            +reg
+            text-decoration: none
+            transition: 0.3s ease-out
+            &:hover
+                color: #D90B23
