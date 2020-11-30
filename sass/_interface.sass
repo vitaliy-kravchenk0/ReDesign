@@ -33,13 +33,8 @@
     font-size: 18px
     text-align: center
     cursor: pointer
-    transition: 0.3s ease-out
     &:focus
         outline: none
-    &:hover
-        background-color: #ffffff
-        color: #D90B23
-        box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.35)
 
 .slider-block
     display: flex
@@ -53,8 +48,12 @@
         position: relative
         display: flex
         justify-content: center
+        overflow: hidden
         &__img
             max-width: 730px
+    &-general
+        max-width: 730px
+        display: flex
 
 .bullets
     display: flex
@@ -91,7 +90,7 @@
     flex-direction: column
     justify-content: space-between
     width: 350px
-    height: 325px
+    height: 355px
     background-color: #ffffff
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15)
     padding: 30px
@@ -108,7 +107,7 @@
     &__descr
         +light
         color: #2d2d2d
-        font-size: 12px
+        font-size: 13px
         margin: 0 0 15px 0
 
 .price

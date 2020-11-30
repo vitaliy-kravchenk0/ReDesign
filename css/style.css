@@ -416,17 +416,10 @@ template {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
-  transition: 0.3s ease-out;
 }
 
 .utp-button:focus {
   outline: none;
-}
-
-.utp-button:hover {
-  background-color: #ffffff;
-  color: #D90B23;
-  box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.35);
 }
 
 .slider-block {
@@ -444,10 +437,16 @@ template {
   position: relative;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .slider-content__img {
   max-width: 730px;
+}
+
+.slider-general {
+  max-width: 730px;
+  display: flex;
 }
 
 .bullets {
@@ -496,7 +495,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
-  height: 325px;
+  height: 355px;
   background-color: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
@@ -525,7 +524,7 @@ template {
   font-size: 10px;
   font-weight: 300;
   color: #2d2d2d;
-  font-size: 12px;
+  font-size: 13px;
   margin: 0 0 15px 0;
 }
 
@@ -700,11 +699,6 @@ template {
   box-shadow: none;
 }
 
-.training-utp__button:hover {
-  border-color: #D90B23;
-  color: #D90B23;
-}
-
 .contacts-block {
   display: flex;
   flex-direction: column;
@@ -809,6 +803,21 @@ template {
   width: 100%;
   height: 410px;
   border: 0;
+}
+
+@media (min-width: 993px) {
+  .utp-button {
+    transition: 0.3s ease-out;
+  }
+  .utp-button:hover {
+    background-color: #ffffff;
+    color: #D90B23;
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.35);
+  }
+  .training-utp__button:hover {
+    border-color: #D90B23;
+    color: #D90B23;
+  }
 }
 
 @media (max-width: 992px) {
