@@ -404,8 +404,7 @@ template {
 }
 
 .utp-button {
-  width: 230px;
-  height: 50px;
+  width: 234px;
   background-color: #D90B23;
   box-shadow: 0px 4px 20px rgba(217, 11, 35, 0.35);
   border: none;
@@ -416,6 +415,8 @@ template {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  padding: 14px 30px;
+  text-decoration: none;
 }
 
 .utp-button:focus {
@@ -495,7 +496,7 @@ template {
   flex-direction: column;
   justify-content: space-between;
   width: 350px;
-  height: 355px;
+  height: 370px;
   background-color: #ffffff;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 30px;
@@ -524,7 +525,7 @@ template {
   font-size: 10px;
   font-weight: 300;
   color: #2d2d2d;
-  font-size: 13px;
+  font-size: 15px;
   margin: 0 0 15px 0;
 }
 
@@ -651,10 +652,6 @@ template {
   justify-content: center;
 }
 
-.services-button:hover {
-  border: 1px solid #D90B23;
-}
-
 .training-block {
   display: flex;
   flex-direction: column;
@@ -688,7 +685,7 @@ template {
   font-size: 15px;
   max-width: 350px;
   color: #2d2d2d;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 40px 0;
 }
 
 .training-utp__button {
@@ -697,6 +694,7 @@ template {
   background-color: #ffffff;
   border: 1px solid black;
   box-shadow: none;
+  padding: 14px 30px;
 }
 
 .contacts-block {
@@ -791,6 +789,7 @@ template {
   width: 30px;
   cursor: pointer;
   margin: 0 15px 0 15px;
+  text-decoration: none;
 }
 
 .map-block {
@@ -818,6 +817,9 @@ template {
     border-color: #D90B23;
     color: #D90B23;
   }
+  .services-button:hover {
+    outline: 1px solid #D90B23;
+  }
 }
 
 @media (max-width: 992px) {
@@ -839,6 +841,9 @@ template {
   .title-block {
     margin-top: 60px;
     margin-bottom: 25px;
+  }
+  .soc-title {
+    margin: 0;
   }
 }
 
@@ -876,6 +881,9 @@ template {
   }
   .utp-title {
     font-size: 27px;
+  }
+  .soc-title {
+    margin: 0;
   }
 }
 
@@ -932,13 +940,14 @@ template {
     font-size: 14px;
   }
   .contacts-all {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
   .soc-title {
     font-size: 16px;
+    margin-top: 30px;
   }
   .soc-img {
-    margin: 0;
+    margin-top: 30px;
   }
   .map__title {
     font-size: 18px;
