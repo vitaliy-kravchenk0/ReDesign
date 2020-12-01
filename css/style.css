@@ -727,10 +727,6 @@ template {
   transition: 0.3s ease-out;
 }
 
-.contacts-phone__street:hover {
-  color: #D90B23;
-}
-
 .contacts-phone__phone {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -820,6 +816,9 @@ template {
   .services-button:hover {
     outline: 1px solid #D90B23;
   }
+  .contacts-phone__street:hover {
+    color: #D90B23;
+  }
 }
 
 @media (max-width: 992px) {
@@ -872,6 +871,7 @@ template {
   }
   .training-utp__button {
     width: 100%;
+    margin-top: 0;
   }
   .training-img {
     margin: 0;
@@ -903,10 +903,11 @@ template {
   }
   .utp-header__button {
     margin: 20px auto 0 auto;
+    width: 100%;
   }
   .card {
     width: 290px;
-    height: 285px;
+    height: 295px;
     margin: 0 auto;
     padding: 15px;
     margin-bottom: 30px;
@@ -915,6 +916,7 @@ template {
     margin: 0;
   }
   .card__descr {
+    font-size: 13px;
     margin: 0;
   }
   .card-img {
