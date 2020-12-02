@@ -37,49 +37,11 @@
     &:focus
         outline: none
 
-.slider-block
-    display: flex
-    flex-direction: column
-    align-items: center
-
-.slider
-    display: flex
-    align-items: center
-    &-content
-        position: relative
-        display: flex
-        justify-content: center
-        overflow: hidden
-        &__img
-            max-width: 730px
-    &-general
-        max-width: 730px
-        display: flex
-
-.bullets
-    display: flex
-    position: absolute
-    bottom: 15px
-    &__item
-        width: 15px
-        height: 15px
-        background-color: #ffffff
-        border-radius: 50%
-        margin: 0 7px 0 7px
-        cursor: pointer
-
-.arrow-left
-    margin-right: 30px
-    cursor: pointer
-
-.arrow-right
-    margin-left: 30px
-    cursor: pointer
-
 .title-block
     +h2
     margin-top: 70px
     margin-bottom: 30px
+    text-align: center
 
 .cards
     display: flex
@@ -149,3 +111,23 @@
                 transform: rotate(45deg)
             &:last-child
                 transform: rotate(-45deg)
+
+.owl-theme .owl-dots .owl-dot, .owl-prev, .owl-next
+    outline: none
+
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next
+    &:hover
+        background-color: #fff
+
+.owl-prev
+    position: absolute
+    bottom: 46%
+    left: -55px
+
+.owl-next
+    position: absolute
+    bottom: 46%
+    right: -55px
+
+.owl-nav
+    display: none

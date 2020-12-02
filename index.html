@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/header/logo.png">
     <title>Курс Barbershop</title>
@@ -55,25 +57,16 @@
         <div class="container">
             <div class="masters-block">
                 <div class="slider-block">
-                    <h2 class="title-block">Наши мастера</h2>
-                    <div class="slider">
-                        <div class="arrow-left arrow-left_one">
-                            <img src="img/masters/arrow_left.png" alt="Стрелка влево">
+                    <h2 class="title-block title-block__masters">Наши мастера</h2>
+                    <div class="owl-carousel owl-theme">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/masters/master_one.jpg" alt="Первый слайд">
                         </div>
-                        <div class="slider-content slider-content_one">
-                            <div class="slider-general slider-general_one">
-                                <img class="slider-content__img slider-content__img_one" src="img/masters/master_one.jpg" alt="Фото мастера">
-                                <img class="slider-content__img slider-content__img_one" src="img/masters/master_two.jpg" alt="Фото мастера">
-                                <img class="slider-content__img slider-content__img_one" src="img/masters/master_three.jpg" alt="Фото мастера">
-                            </div>
-                            <div class="bullets">
-                                <div class="bullets__item bullets__item_one"></div>
-                                <div class="bullets__item bullets__item_one"></div>
-                                <div class="bullets__item bullets__item_one"></div>
-                            </div>
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/masters/master_two.jpg" alt="Второй слайд">
                         </div>
-                        <div class="arrow-right arrow-right_one">
-                            <img src="img/masters/arrow_right.png" alt="Стрелка вправо">
+                        <div class="slider__item">
+                            <img class="slider__img" src="img/masters/master_three.jpg" alt="Третий слайд">
                         </div>
                     </div>
                 </div>
@@ -180,29 +173,22 @@
             <div class="gallery-block">
                 <div class="slider-block">
                     <h2 class="title-block">Галерея</h2>
-                    <div class="slider">
-                        <div class="arrow-left arrow-left_two">
-                            <img src="img/masters/arrow_left.png" alt="Стрелка влево">
-                        </div>
-                        <div class="slider-content slider-content_two">
-                            <div class="slider-general slider-general_two">
-                                <img class="slider-content__img slider-content__img_two" src="img/gallery/photo_1.jpeg" alt="Фото с галереи">
-                                <img class="slider-content__img slider-content__img_two" src="img/gallery/photo_2.jpeg" alt="Фото с галереи">
-                                <img class="slider-content__img slider-content__img_two" src="img/gallery/photo_3.jpeg" alt="Фото с галереи">
-                                <img class="slider-content__img slider-content__img_two" src="img/gallery/photo_4.jpeg" alt="Фото с галереи">
-                                <img class="slider-content__img slider-content__img_two" src="img/gallery/photo_5.jpg" alt="Фото с галереи">
-                            </div>
-                            <div class="bullets">
-                                <div class="bullets__item bullets__item_two"></div>
-                                <div class="bullets__item bullets__item_two"></div>
-                                <div class="bullets__item bullets__item_two"></div>
-                                <div class="bullets__item bullets__item_two"></div>
-                                <div class="bullets__item bullets__item_two"></div>
-                            </div>
-                        </div>
-                        <div class="arrow-right arrow-right_two">
-                            <img src="img/masters/arrow_right.png" alt="Стрелка вправо">
-                        </div>
+                    <div class="owl-carousel owl-theme">
+                       <div class="slider__item">
+                            <img class="slider__img" src="img/gallery/photo_1.jpeg" alt="Фото с галереи">
+                       </div>
+                       <div class="slider__item">
+                            <img class="slider__img" src="img/gallery/photo_2.jpeg" alt="Фото с галереи">
+                       </div>
+                       <div class="slider__item">
+                            <img class="slider__img" src="img/gallery/photo_3.jpeg" alt="Фото с галереи">
+                       </div>
+                       <div class="slider__item">
+                            <img class="slider__img" src="img/gallery/photo_4.jpeg" alt="Фото с галереи">
+                       </div>
+                       <div class="slider__item">
+                            <img class="slider__img" src="img/gallery/photo_5.jpg" alt="Фото с галереи">
+                       </div>
                     </div>
                 </div>
             </div>
@@ -251,6 +237,9 @@
             </div>
         </div>
     </section>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slider.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
