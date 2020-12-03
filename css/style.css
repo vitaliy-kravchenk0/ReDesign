@@ -555,10 +555,6 @@ template {
   right: -55px;
 }
 
-.owl-nav {
-  display: none;
-}
-
 .header-block {
   display: flex;
   flex-direction: column;
@@ -629,6 +625,10 @@ template {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.services-button {
+  margin-top: 0;
 }
 
 .training-block {
@@ -779,7 +779,7 @@ template {
   border: 0;
 }
 
-@media (min-width: 993px) {
+@media screen and (min-width: 993px) {
   .utp-button {
     transition: 0.3s ease-out;
   }
@@ -798,15 +798,15 @@ template {
   .contacts-phone__street:hover {
     color: #D90B23;
   }
-  .owl-nav {
-    display: inline-block;
+}
+
+@media screen and (max-width: 1250px) {
+  .owl-theme .owl-nav {
+    display: none;
   }
 }
 
-@media (max-width: 992px) {
-  .arrow-left, .arrow-right {
-    display: none;
-  }
+@media screen and (max-width: 992px) {
   .list-menu {
     display: none;
   }
@@ -828,7 +828,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .title-block {
     margin-top: 50px;
     margin-bottom: 20px;
@@ -869,7 +869,7 @@ template {
   }
 }
 
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .header-block {
     padding: 15px;
     min-height: 430px;
