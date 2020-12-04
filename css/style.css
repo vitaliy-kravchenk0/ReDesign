@@ -488,6 +488,13 @@ template {
   margin: 0 0 13px 0;
 }
 
+.card-text {
+  display: flex;
+  height: 290px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .price {
   font-family: "Montserrat", sans-serif;
   color: #ffffff;
@@ -1152,6 +1159,7 @@ template {
   }
   .card__title {
     margin: 0;
+    margin-top: 15px;
   }
   .card__descr {
     font-size: 13px;
