@@ -48,7 +48,6 @@ $(document).ready(function(){
     });
 
     $(".list-language__item-burger").on("click", function(e) {
-        e.preventDefault();
         burger(".burger-menu");
     });
 });
