@@ -399,6 +399,16 @@ template {
   line-height: 17px;
 }
 
+.utp::before {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 400px;
+  top: 140px;
+  left: 48px;
+  background-color: #ffffff;
+}
+
 .utp-button {
   margin-top: 20px;
 }
@@ -525,6 +535,7 @@ template {
 
 .header-block {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   min-height: 620px;
@@ -1093,6 +1104,16 @@ template {
   }
   .utp-title {
     font-size: 27px;
+  }
+  .utp::before {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 400px;
+    top: 140px;
+    left: 48px;
+    background-color: #ffffff;
   }
   .soc-title {
     margin: 0;
