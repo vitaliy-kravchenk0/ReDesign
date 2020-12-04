@@ -21,12 +21,34 @@ $(document).ready(function(){
 
     // Burger
 
+    function burger(clickOn) {
+        $(clickOn).removeClass("burger-menu_first-load");
+        $(clickOn).toggleClass("burger-menu_active");
+        $(clickOn).toggleClass("burger-menu_not-active");
+        $(".burger-modal").toggleClass("showModal");
+        $(".burger-modal").toggleClass("hideModal");
+        $(".burger-modal").toggleClass("modal_active");
+        $(".burger-modal").toggleClass("modal_not-active");
+
+        if(document.body.style.overflow == "") {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+    }
 
     $(".burger-menu").on("click", function(e) {
         e.preventDefault();
-        $(this).toggleClass("burger-menu_active");
-        document.body.style.overflow = "hidden";
-        $(".burger-modal").toggleClass("show");
-        $(".burger-modal").toggleClass("hide");
+        burger(".burger-menu");
+    });
+
+    $(".list-menu__item-burger").on("click", function(e) {
+        e.preventDefault();
+        burger(".burger-menu");
+    });
+
+    $(".list-language__item-burger").on("click", function(e) {
+        e.preventDefault();
+        burger(".burger-menu");
     });
 });

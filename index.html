@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/header/logo.png">
+    <link rel="shortcut icon" href="img/header/favicon.png" type="img/png">
     <title>Курс Barbershop</title>
 </head>
 <body>
@@ -33,8 +33,10 @@
                             <a class="list-language__item" href="">en</a>
                         </div>
                     </div>
-                    <a class="burger-menu" href="#">
-                        <span class="burger-menu__item"></span>
+                    <a class="burger-menu burger-menu_not-active burger-menu_first-load" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </a>
                 </div>
                 <div class="utp">
@@ -229,8 +231,21 @@
             </div>
         </div>
     </section>
-    <div class="burger-modal hide">
-
+    <div class="burger-modal hideModal modal_not-active">
+        <div class="list list__burger">
+            <div class="list-menu list-menu__burger">
+                <a class="list-menu__item list-menu__item-burger list-menu__item-masters" href="#masters">Мастера</a>
+                <a class="list-menu__item list-menu__item-burger list-menu__item-services" href="#services">Услуги</a>
+                <a class="list-menu__item list-menu__item-burger list-menu__item-training" href="#training">Обучение</a>
+                <a class="list-menu__item list-menu__item-burger list-menu__item-gallery" href="#gallery">Галерея</a>
+                <a class="list-menu__item list-menu__item-burger list-menu__item-contacts" href="#contacts">Контакты</a>
+            </div>
+            <div class="list-language list-language__burger">
+                <a class="list-language__item list-language__item-burger" href="">Ru</a>
+                <a class="list-language__item list-language__item-burger" href="">Ua</a>
+                <a class="list-language__item list-language__item-burger" href="">En</a>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>

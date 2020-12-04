@@ -21,16 +21,56 @@
                 &:hover
                     color: #D90B23
 
+    .list
+        &-menu
+            &__item
+                &:hover
+                    color: #D90B23
+        &-language
+            &__item
+                &:hover
+                    color: #D90B23
+
 @media screen and ( max-width: 1250px )
     .owl-theme .owl-nav
         display: none
     
 @media screen and ( max-width: 992px )
-    .list-menu
+    .list
         display: none
-    
-    .list-language
-        display: none
+        &__burger
+            display: flex
+            flex-direction: column
+            align-items: center
+            position: relative
+        &-menu
+            &__burger
+                display: flex
+                flex-direction: column
+                width: 100vh
+                align-items: center
+                margin-right: 0
+                margin-top: 47px
+            &__item
+                &-burger
+                    margin-bottom: 18px
+                    text-align: center
+                    font-size: 18px
+        &-language
+            &__burger
+                display: flex
+                flex-direction: column
+                position: absolute
+                top: 100px
+                right: 28px
+            &__item
+                &-burger
+                    text-align: center
+                    margin-bottom: 30px
+                    font-size: 18px
+
+    .burger-menu
+        display: block
 
     .title-block
         margin-top: 60px
@@ -41,7 +81,7 @@
             margin: 0
     
     .burger-menu
-        display: inline-block
+        display: block
         z-index: 10
 
 @media screen and ( max-width: 768px )
@@ -80,6 +120,11 @@
     .soc
         &-title
             margin: 0
+    
+    .burger-menu
+        position: absolute
+        top: 18px
+        right: 1px
 
 @media screen and ( max-width: 576px )
     .header-block
@@ -138,3 +183,8 @@
     
     .map__title
         font-size: 18px
+
+    .burger-menu
+        position: absolute
+        top: 33px
+        right: 16px
