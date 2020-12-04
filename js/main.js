@@ -32,8 +32,10 @@ $(document).ready(function(){
 
         if(document.body.style.overflow == "") {
             document.body.style.overflow = "hidden";
+            $(".burger-modal").css("overflow", "hidden");
         } else {
             document.body.style.overflow = "";
+            $(".burger-modal").css("overflow", "");
         }
     }
 

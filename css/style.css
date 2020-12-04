@@ -730,13 +730,13 @@ template {
     height: 0;
   }
   100% {
-    height: 120vh;
+    height: 100vh;
   }
 }
 
 @keyframes modalClose {
   0% {
-    height: 120vh;
+    height: 100vh;
   }
   100% {
     height: 0;
@@ -1028,10 +1028,10 @@ template {
   .list-menu__burger {
     display: flex;
     flex-direction: column;
-    width: 100vh;
+    width: 100%;
     align-items: center;
     margin-right: 0;
-    margin-top: 47px;
+    margin-top: 33px;
   }
   .list-menu__item-burger {
     margin-bottom: 18px;
@@ -1042,7 +1042,7 @@ template {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 100px;
+    top: 86px;
     right: 28px;
   }
   .list-language__item-burger {
@@ -1181,7 +1181,7 @@ template {
   }
   .burger-menu {
     position: absolute;
-    top: 33px;
+    top: 18px;
     right: 16px;
   }
 }
