@@ -13,6 +13,10 @@
     align-items: center
     position: relative
 
+.logo
+    &__img
+        width: 40px
+
 .list
     display: flex
     justify-content: space-between
@@ -138,18 +142,6 @@
     75%
         right: 50%
     100%
-
-@keyframes modalOpen
-    0%
-        height: 0
-    100%
-        height: 100vh
-
-@keyframes modalClose
-    0%
-        height: 100vh
-    100%
-        height: 0
         
 .burger-menu_active span:nth-child(1)
     animation: burgerOpenOne 1s ease-out
@@ -187,24 +179,27 @@
     animation: burgerFirstLoadThree 1s ease-out
     animation-fill-mode: forwards
 
-.modal_not-active
-    animation: modalClose 1s ease-out
-    animation-fill-mode: forwards
-
 .modal_active
-    animation: modalOpen 1s ease-out
-    animation-fill-mode: forwards
-
-.showModal
     display: block
     position: absolute
     top: 0
     left: 0
     z-index: 9
     width: 100%
-    height: 0
+    height: 100vh
     background-color: #000000
     opacity: 0.9
+    transition: 1s
 
-.hideModal
-    display: none
+.modal_not-active
+    display: block
+    overflow: hidden
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 9
+    width: 100%
+    height: 0vh
+    background-color: #000000
+    opacity: 0.9
+    transition: 1s

@@ -25,8 +25,6 @@ $(document).ready(function(){
         $(clickOn).removeClass("burger-menu_first-load");
         $(clickOn).toggleClass("burger-menu_active");
         $(clickOn).toggleClass("burger-menu_not-active");
-        $(".burger-modal").toggleClass("showModal");
-        $(".burger-modal").toggleClass("hideModal");
         $(".burger-modal").toggleClass("modal_active");
         $(".burger-modal").toggleClass("modal_not-active");
 
