@@ -526,13 +526,13 @@ template {
 
 .owl-prev {
   position: absolute;
-  bottom: 46%;
+  bottom: 48%;
   left: -55px;
 }
 
 .owl-next {
   position: absolute;
-  bottom: 46%;
+  bottom: 48%;
   right: -55px;
 }
 
@@ -862,6 +862,7 @@ template {
 
 .training-utp {
   margin-left: 15px;
+  height: 246px;
 }
 
 .training-utp__title {
