@@ -1357,6 +1357,7 @@ template {
   .training-utp__descr {
     font-size: 13px;
     margin-bottom: 30px;
+    text-align: center;
   }
   .training-utp__button {
     width: 100%;
